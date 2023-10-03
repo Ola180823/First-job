@@ -10,4 +10,8 @@ fs.removeSync('/tmp/myfile.txt');
 fs.rmdirSync('papka1/,papka2/,papka3');
 console.log('success!')(err); 
 console.error(err);
+<<<<<<< HEAD
+;
+=======
 /
+>>>>>>> main
