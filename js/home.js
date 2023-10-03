@@ -9,4 +9,9 @@ fs.copySync('/papka2/myfile.txt', '/papka3/myfile.txt');
 fs.removeSync('/tmp/myfile.txt');
 fs.rmdirSync('papka1/,papka2/,papka3');
 console.log('success!')(err); 
+<<<<<<< HEAD
 console.error(err);
+=======
+console.error(err);
+/
+>>>>>>> 1343548e1e68ad029c9e8cb546d07ebe8f546656
