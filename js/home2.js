@@ -43,6 +43,6 @@ console.log(typeof value);
 //boolean to string
 let value2 = String(true);
 console.log(value2);
-console.log(typeof value2)
+console.log(typeof value2);
 
 
