@@ -45,4 +45,3 @@ let value2 = String(true);
 console.log(value2);
 console.log(typeof value2);
 
-
