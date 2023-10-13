@@ -1,42 +1,61 @@
 
 
 //#3(a)
-const arr = [];
-function getRandomIntInclusive(min, max)  {
-  min = (Math.min(1, 6));
-  max = (Math.max(1, 15));
-    return Math.floor(Math.random()* (max- min + 1)) + min;
-    result.push(Math.random);
-    total -= randomnumber;
-    const number = 15;
-    array.length =3;
+function splitNumberIntoParts(total, count)  {
+  const result = [];
+  for (let i = 0; i < count - 1; i++) {
+  const min = (Math.min(1));
+  const max = (Math.max(15));
+  const randomPart = Math.floor(Math.random()* (max- min + 1)) + min;
+    result.push(randomPart);
+    total -= randomPart;
+  }
+  result.push(total);
+  return result;
 }
-console.log(Math.random());
- 
+const total = 15;
+const count = 3;
+const integerParts = splitNumberIntoParts(total, count);
+console.log(integerParts);
+
+
 //#3(B)
-function getRandomFloat(min, max) {
-        min = (Math.ceil(1, 15));
-        max = (Math.floor(1, 15));
-        return Math.random() * 100/100;
-    }
-   console.log(Math.random());
+//function splitNumberIntoParts(total, count)  {
+  //const result = [];
+  //for (let i = 0; i < count - 1; i++) {
+  //const min = (Math.min(0.01));
+  //const max = (Math.max(15));
+  //const randomPart = Math.floor(Math.random()* (max- min + 1)) + min.toFixed(2)
+    //result.push(parseFloat).toFixed(2);
+   // total -= randomPart;
+  //}
+  //result.push(total);
+  //return result;
+//}
+//const total1 = 15;
+//const count1 = 3;
+//const integerParts2 = splitNumberIntoParts(total, count);
+//console.log(integerParts);
+
 
 //#2
-
-let startDate = new Date('2000-01-01');  
+function countFriday13() {
+let startDate =new  Date('2000-01-01');  
 let endDate = new Date('2023-10-10');
 let count = 0;
-function countFriday13() {
+
   while(startDate <= endDate) {
-    if (startDate.getDate() === 13)
-    (startDate.getDay() === 5) 
+    if (startDate.getDate('2000-01-01') === 13 &&
+    startDate.getDay('2023-10-10') === 5) {
       count ++;
     }
-    startDate.setMonth.startDate.getMonth()+ 1;
+    startDate.setMonth(startDate.getMonth()+ 1);
   }
   return count;
+}
+const Friday13Count = countFriday13();
 
- console.log(countFriday13());
+ console.log(Friday13Count);
  
    
 //#1
@@ -54,11 +73,13 @@ function countFriday13() {
 //if(sum (player1) > sum  (player2)){
   //console.log(player1)
 //} else if 
- // (sum (player2) > sum (player1) )
+  //(sum (player2) > sum (player1) )
   //console.log(player2);
 //} else  if {
 //console.log (Ничья!)
 //}
+
+
 
 
 
