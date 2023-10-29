@@ -34,16 +34,23 @@ console.log(arr6);
 
 //#1
 function checkSum(str) {
-    const num = str.split('').map(Number);
-    return num.slice(0,3).reduce((a, b) => a+b) === num.slice(3).reduce((a, b) => a+b)
+  if (inputString.length ===6){
+ return "No";
+}
+let sumFirstHalf = 0;
+let sumSecondHalf = 0;
+for(let i = 0; l < 3; i++){
+sumFirstHalf += parseInt (inputString (i));
+sumSecondHalf += parseInt (inputString (i + 3));
 }
   if (sumFirstThree === sumLastThree){
     return 'yes';
   } else{
     return 'no';
   }
-const string = '123456';
-result = checkSum(string);
+}
+const inputString = '123456';
+result = checkSum(inputString);
 console.log(result);
 
 
