@@ -11,6 +11,7 @@
   "dependencies": {
     "axios": "^1.5.1",
     "fs-extra": "^11.1.1",
+    "webdriverio": "^8.24.12",
     "yargs": "^17.7.2"
   },
   "devDependencies": {

@@ -1,0 +1,32 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "wdio": "wdio run ./wdio.conf.js",
+    "open-report": "npx allure generate && npx allure open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wdio/allure-reporter": "^8.27.0",
+    "@wdio/cli": "^8.27.0",
+    "@wdio/local-runner": "^8.27.0",
+    "@wdio/mocha-framework": "^8.27.0",
+    "@wdio/spec-reporter": "^8.27.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.25.0",
+    "axios": "^1.6.5",
+    "chai": "^4.3.10",
+    "jest": "^29.7.0",
+    "jest-html-reporters": "^3.1.7",
+    "jest-junit": "^16.0.0"
+  }
+}
